@@ -105,10 +105,10 @@ const App = () => {
             </View>
           </View>
           <View style={styles.product}>
-            <Text style={{fontWeight: 'bold', fontSize: 14, marginRight: 50}}>
+            <Text style={{fontWeight: 'bold', fontSize: 14, marginLeft: 10}}>
               Product Rating
             </Text>
-            <Text style={{fontWeight: 'bold', fontSize: 14, color: '#daa520'}}>
+            <Text style={{fontWeight: 'bold', fontSize: 14, color: '#daa520',marginRight:10}}>
               39 Reviews
             </Text>
           </View>
@@ -129,7 +129,7 @@ const App = () => {
                 4.5
               </Text>
             </View>
-            <View style={{flexDirection: 'row'}}>
+            <View style={{flexDirection: 'row',marginRight:10}}>
               
                 <Avatar.Image  style={{left:45}}
                   size={30}
@@ -159,7 +159,7 @@ const App = () => {
             </View>
           </View>
 
-          <Text style={{fontWeight: 'bold', fontSize: 14, marginTop: 20}}>
+          <Text style={{fontWeight: 'bold', fontSize: 14, marginTop: 20,marginLeft:20}}>
             Size
           </Text>
 
@@ -208,7 +208,7 @@ const App = () => {
           </View>
 
           <View>
-            <Text style={{fontWeight: 'bold', fontSize: 14, marginBottom: 15}}>
+            <Text style={{fontWeight: 'bold', fontSize: 14, marginBottom: 15,marginLeft:20}}>
               Color
             </Text>
           </View>
@@ -221,7 +221,7 @@ const App = () => {
           </View>
 
           <View style={{marginTop: 18}}>
-            <Text style={{fontWeight: 'bold', fontSize: 14, marginBottom: 20,marginLeft:10}}>
+            <Text style={{fontWeight: 'bold', fontSize: 14, marginBottom: 20,marginLeft:20}}>
               You may also like
             </Text>
           </View>
@@ -233,11 +233,12 @@ const App = () => {
                 overflow: 'hidden',
                 flexDirection: 'row',
                 marginLeft: 10,
+                marginRight:10
               }}>
               <View style={{}}>
                 <Image
                   source={require('./components/images/image1.jpg')}
-                  style={{height: 100, width: 100, borderRadius: 5,marginTop:10,}}
+                  style={{height: 100, width: 100, borderRadius: 5,marginTop:10,marginBottom:10}}
                 />
               </View>
               <View style={{marginLeft: 10,marginTop:10,}}>
@@ -273,11 +274,12 @@ const App = () => {
                 flexDirection: 'row',
                 marginLeft: 10,
                 marginTop: 20,
+                marginRight:10
               }}>
               <View style={{}}>
                 <Image
                   source={require('./components/images/image2.jpg')}
-                  style={{height: 100, width: 100, borderRadius: 5,marginTop:10,}}
+                  style={{height: 100, width: 100, borderRadius: 5,marginTop:10,marginBottom:10}}
                 />
               </View>
               <View style={{marginLeft: 10,marginTop:10,}}>
@@ -333,12 +335,14 @@ const styles = StyleSheet.create({
   product: {
     marginTop: 20,
     marginLeft:10,
+    marginRight:10,
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
   star: {
     flex: 1,
     marginLeft:5,
+    marginRight:10,
     flexDirection: 'row',
     // alignSelf: 'flex-start',
     marginTop: 10,
