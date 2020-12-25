@@ -164,7 +164,7 @@ const App = () => {
           </Text>
 
           <View style={styles.surface}>
-            <View style={{backgroundColor: 'white'}}>
+            <View >
               <Text
                 style={{
                   fontWeight: 'bold',
@@ -175,7 +175,7 @@ const App = () => {
                 S
               </Text>
             </View>
-            <View style={{backgroundColor: 'white'}}>
+            <View >
               <Text
                 style={{
                   fontWeight: 'bold',
@@ -190,17 +190,17 @@ const App = () => {
                 M
               </Text>
             </View>
-            <View style={{backgroundColor: 'white'}}>
+            <View >
               <Text style={{fontWeight: 'bold', fontSize: 30, padding: 10}}>
                 L
               </Text>
             </View>
-            <View style={{backgroundColor: 'white'}}>
+            <View >
               <Text style={{fontWeight: 'bold', fontSize: 30, padding: 10}}>
                 2XL
               </Text>
             </View>
-            <View style={{backgroundColor: 'white'}}>
+            <View >
               <Text style={{fontWeight: 'bold', fontSize: 30, padding: 10}}>
                 3XL
               </Text>
@@ -221,7 +221,7 @@ const App = () => {
           </View>
 
           <View style={{marginTop: 18}}>
-            <Text style={{fontWeight: 'bold', fontSize: 14, marginBottom: 20}}>
+            <Text style={{fontWeight: 'bold', fontSize: 14, marginBottom: 20,marginLeft:10}}>
               You may also like
             </Text>
           </View>
@@ -232,15 +232,15 @@ const App = () => {
                 borderRadius: 10,
                 overflow: 'hidden',
                 flexDirection: 'row',
-                marginLeft: 15,
+                marginLeft: 10,
               }}>
               <View style={{}}>
                 <Image
                   source={require('./components/images/image1.jpg')}
-                  style={{height: 100, width: 100, borderRadius: 5}}
+                  style={{height: 100, width: 100, borderRadius: 5,marginTop:10,}}
                 />
               </View>
-              <View style={{marginLeft: 10}}>
+              <View style={{marginLeft: 10,marginTop:10,}}>
                 <Text style={{fontWeight: 'bold', fontSize: 14}}>
                   Leaf Design Dress
                 </Text>
@@ -271,16 +271,16 @@ const App = () => {
                 borderRadius: 10,
                 overflow: 'hidden',
                 flexDirection: 'row',
-                marginLeft: 15,
+                marginLeft: 10,
                 marginTop: 20,
               }}>
               <View style={{}}>
                 <Image
                   source={require('./components/images/image2.jpg')}
-                  style={{height: 100, width: 100, borderRadius: 5}}
+                  style={{height: 100, width: 100, borderRadius: 5,marginTop:10,}}
                 />
               </View>
-              <View style={{marginLeft: 10}}>
+              <View style={{marginLeft: 10,marginTop:10,}}>
                 <Text style={{fontWeight: 'bold', fontSize: 14}}>
                   Leaf Design Dress
                 </Text>
@@ -332,11 +332,13 @@ const styles = StyleSheet.create({
   },
   product: {
     marginTop: 20,
+    marginLeft:10,
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
   star: {
     flex: 1,
+    marginLeft:5,
     flexDirection: 'row',
     // alignSelf: 'flex-start',
     marginTop: 10,
@@ -347,11 +349,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     // height: 80,
-    shadowColor: '#000',
-    shadowOffset: {width: 0, height: 2},
-    shadowOpacity: 0.5,
-    shadowRadius: 2,
-    backgroundColor: '#eee',
+    // shadowColor: '#000',
+    // shadowOffset: {width: 0, height: 2},
+    // shadowOpacity: 0.5,
+    // shadowRadius: 2,
+    // backgroundColor: '#eee',
 
     elevation: 4,
   },
@@ -360,6 +362,7 @@ const styles = StyleSheet.create({
     height: 50,
     borderRadius: 50 / 2,
     backgroundColor: 'grey',
+    marginLeft:10,
   },
   circle2: {
     width: 50,
